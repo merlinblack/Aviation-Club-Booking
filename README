@@ -1,0 +1,19 @@
+Aeroclub booking site created for Omarama Aviation Inc.
+
+This is my first large project using PHP and was done free as a learning exercise but with a usefull site at completion.
+There is some javascript, along with some AJAX features.
+
+Some things would be done differently, if I was to do this again from scratch. For example I would use jQuery or something similar.  :-)
+
+Features:
+* Supports booking of one aircraft, but would be easy to add multi-aircraft capability.
+* Uses AJAX to check dates while you fill in your booking for fast feed back.
+* Notice board that admins can post to.
+* Offers summary info without logging in, detailed once logged in.
+* Mulitple admins
+* Can notify any member by email, when bookings are made (usally admins)
+* GPL license.
+
+Designed with a small number of members in mind, there is no self registration, or password retrieval.  Its expected that you can just ring/email one of the admins.
+
+Images are kept to a minium to keep the site responsive.

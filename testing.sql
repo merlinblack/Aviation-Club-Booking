@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   `member_id` int(11) unsigned NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`booking_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=74 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 -- --------------------------------------------------------
 
@@ -49,8 +49,9 @@ CREATE TABLE IF NOT EXISTS `members` (
   `email` varchar(50) DEFAULT NULL,
   `phone` varchar(30) DEFAULT NULL,
   `admin` tinyint(1) NOT NULL DEFAULT '0',
+  `notify` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`member_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 -- --------------------------------------------------------
 
@@ -63,4 +64,4 @@ CREATE TABLE IF NOT EXISTS `notices` (
   `date` datetime NOT NULL,
   `notice` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10;

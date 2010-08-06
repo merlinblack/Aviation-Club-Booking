@@ -78,7 +78,9 @@
 			
 			echo '</tr>';
 		}
-		echo '<tr><td colspan=\'6\' ></td><td>';
+        echo '<tr><td colspan=\'6\' style=\'text-align:right;\'>';
+		echo '<a href=\'add.php?month=' . $_GET['month'] . '&year=' . $_GET['year'] . '\'">';
+        echo 'Add booking</a></td><td>';
 		echo '<a href=\'add.php?month=' . $_GET['month'] . '&year=' . $_GET['year'] . '\'">';
 		echo '<img src="images/plus_32x32.png" width="16" height="16" alt="Add Booking" title="Add Booking">';
 		echo '</a>';

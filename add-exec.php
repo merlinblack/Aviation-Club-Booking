@@ -76,19 +76,19 @@ if( $start > $end ) {
 // Check database for conflicting bookings.
 // Check start date/time
 if( checkStart( $start ) ) {
-    $errmsg_arr[] = 'Start date falls within another booking';
+    $errmsg_arr[] = 'Start date and time falls within another booking';
     $errflag = true;
 }
 
 // Check end date/time
 if( checkEnd( $end ) ) {
-    $errmsg_arr[] = 'Finish date falls within another booking';
+    $errmsg_arr[] = 'Finish date and time falls within another booking';
     $errflag = true;
 }
 
 // Check that no bookings lie within the start and end dates
 if( checkSpan( $start, $end ) ) {
-    $errmsg_arr[] = 'Another booking lies between your selected dates';
+    $errmsg_arr[] = 'Another booking lies between your selected date and times';
     $errflag = true;
 }
 

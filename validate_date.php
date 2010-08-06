@@ -23,13 +23,13 @@ function Validate( $timestamp, $field )
 	if( $field == 'start_date' )
 	{
 		if( checkStart( $timestamp ) )
-			return 'Start date falls within another booking';
+			return 'Start date and time falls within another booking';
 	}
 	
 	if( $field == 'end_date' )
 	{
 		if( checkEnd( $timestamp ) )
-			return 'End date falls within another booking';
+			return 'End date and time falls within another booking';
 	}	
 	
 	return 'valid';

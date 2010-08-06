@@ -88,7 +88,7 @@ if( checkEnd( $end ) ) {
 
 // Check that no bookings lie within the start and end dates
 if( checkSpan( $start, $end ) ) {
-    $errmsg_arr[] = 'Another booking lies between your selected date and times';
+    $errmsg_arr[] = 'Another booking lies between your selected dates and times';
     $errflag = true;
 }
 
